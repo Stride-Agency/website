@@ -1,5 +1,5 @@
 <template>
-    <div class="relative isolate pt-14">
+    <div class="relative isolate pt-14 mt-12">
       <div class="lg:pb-40">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
           <div class="mx-auto max-w-2xl text-center relative">
