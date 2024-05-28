@@ -16,7 +16,7 @@
             <div class="mx-auto  lg:flex-auto lg:py-32 lg:text-left">
                 <div class="gap-x-6 lg:justify-start flex-col ">
                     <div class="mb-4 mt-12">
-                        <NuxtLink to="/services/shopware-maintenance" class="inline-flex space-x-6">
+                        <NuxtLink to="/services/shopware-wartungsservice" class="inline-flex space-x-6">
                             <span class="rounded-full bg-primary/10 px-3 py-1 text-sm font-semibold leading-6 text-primary ring-1 ring-inset ring-primary-300/20">Shopware Wartungsservice</span>
                             <span class="inline-flex items-center space-x-2 text-sm font-medium leading-6 text-gray-300">
                             <span>Mehr Details</span>
