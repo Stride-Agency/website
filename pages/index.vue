@@ -1,7 +1,7 @@
 <template>
     <div class="bg-white ">
         <div
-            class="relative isolate overflow-hidden bg-slate-900 px-6 pt-16 shadow-2xl sm:px-16 md:pt-24  lg:gap-x-20 lg:px-24 lg:pt-0 h-screen w-full items-center grid grid-cols-2">
+            class="relative isolate overflow-hidden bg-slate-900 px-6 pt-16 shadow-2xl sm:px-16 md:pt-24  lg:gap-x-20 lg:px-24 lg:pt-0 min-h-screen w-full items-center grid grid-cols-1 lg:grid-cols-2">
             <svg viewBox="0 0 1024 1024"
                 class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0"
                 aria-hidden="true">
@@ -37,7 +37,7 @@
 
                 </div>
             </div>
-            <div class="relative mt-16 h-80 lg:mt-8 h-screen flex items-center justify-center max-w-md">
+            <div class="relative mt-16 h-80 lg:mt-8 h-screen items-center justify-center max-w-md hidden lg:flex">
                 <img class="w-[34rem] max-w-none lg:mt-4"
                 src="/public/stride-agency-coming-soon-scaled.png"
                 alt="App screenshot" width="1824" height="1080" />
