@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-white">
+    <div class="bg-white ">
         <div
             class="relative isolate overflow-hidden bg-slate-900 px-6 pt-16 shadow-2xl sm:px-16 md:pt-24  lg:gap-x-20 lg:px-24 lg:pt-0 h-screen w-full items-center grid grid-cols-2">
             <svg viewBox="0 0 1024 1024"
