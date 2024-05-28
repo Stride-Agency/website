@@ -49,4 +49,7 @@
 <script setup>
 import { EnvelopeIcon, ChevronRightIcon } from '@heroicons/vue/24/solid'
 
+useHead({
+    title: 'Stride: E-Commerce-Agentur',
+})
 </script>
