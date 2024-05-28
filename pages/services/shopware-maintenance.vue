@@ -9,7 +9,7 @@
 
             <stripe-pricing-table pricing-table-id="prctbl_1PKxJwJBWr5bnLdv6sLQUCCF"
             publishable-key="pk_live_51PBsnCJBWr5bnLdveCAAp42TWQ73q4SgU0bzelyT1j0T8nQJ1NspsJMTM40yhIUw6KOIKK7d7F3fles3tHmw3KXy00I0xLFpJS">
-        </stripe-pricing-table>
+            </stripe-pricing-table>
 
           </div>
 
