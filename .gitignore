@@ -5,11 +5,9 @@
 .nitro
 .cache
 dist
-pnpm-lock.yaml
 
 # Node dependencies
 node_modules
-pnpm-lock.yaml
 
 # Logs
 logs
