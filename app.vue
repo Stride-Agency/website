@@ -1,6 +1,7 @@
 <template>
     <Header />
     <main>
+      <div class="text-neutral-900">Test</div>
         <NuxtPage />
     </main>
     <Footer />
