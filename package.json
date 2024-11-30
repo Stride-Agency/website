@@ -10,6 +10,8 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxtjs/strapi": "2.0.0",
+    "@strapi/strapi": "^5.4.2",
     "nuxt": "^3.14.1592",
     "vue": "latest",
     "vue-router": "latest"
