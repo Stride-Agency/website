@@ -6,5 +6,9 @@ export default defineNuxtConfig({
   ssr: true,
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/content'],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@nuxt/content',
+    '@nuxthq/studio',
+  ],
 })
