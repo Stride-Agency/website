@@ -1,7 +1,16 @@
 <template>
-  <div>
-    <div class="text-primary">Welcome</div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
-  </div>
+    <div>
+        <NuxtPage />
+    </div>
 </template>
+
+<script setup lang="ts">
+useHead({
+    bodyAttrs: {
+        class: 'bg-neutral text-white font-primary text-body'
+    },
+    htmlAttrs: {
+        class: 'dark'
+    }
+})
+</script>
