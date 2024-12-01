@@ -4,8 +4,6 @@
 </template>
 
 <script setup lang="ts">
-import removeTrailingSlash from '~/utils';
-
 const { locale } = useI18n()
 const route = useRoute()
 
