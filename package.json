@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxt/content": "^2.13.4",
     "@nuxtjs/strapi": "2.0.0",
     "@strapi/strapi": "^5.4.2",
     "nuxt": "^3.14.1592",
