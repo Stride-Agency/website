@@ -1,5 +1,5 @@
 <template>
-    <NavigationMenu class="z-40">
+    <!-- <NavigationMenu class="z-40">
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
@@ -91,6 +91,53 @@
           </NavigationMenuLink>
         </NavigationMenuItem>
       </NavigationMenuList>
+    </NavigationMenu> -->
+    <NavigationMenu class="z-40">
+      <NavigationMenuList>
+        <NavigationMenuItem v-for="item in navigation">
+          <NavigationMenuLink v-if="item.children?.length === 0" :href="item._path" :class="navigationMenuTriggerStyle()">
+            {{ item.title }}
+          </NavigationMenuLink>
+          <NavigationMenuTrigger v-else>{{ item.title }}</NavigationMenuTrigger>
+          <NavigationMenuContent v-for="child in item.children">
+            <ul class="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[minmax(0,.75fr)_minmax(0,1fr)]">
+              <li v-for="subChild in child.children">
+                <NavigationMenuLink as-child>
+                  <NuxtLink
+                    :to="subChild._path"
+                    class="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                  >
+                    <div class="text-sm font-medium leading-none">{{ subChild.title }}</div>
+                    <p class="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                      Re-usable components built using Radix UI and Tailwind CSS.
+                    </p>
+                  </NuxtLink>
+                </NavigationMenuLink>
+              </li>
+            </ul>
+          </NavigationMenuContent>
+        </NavigationMenuItem>
+        <!-- <NavigationMenuItem>
+          <NavigationMenuTrigger>Components</NavigationMenuTrigger>
+          <NavigationMenuContent>
+            <ul class="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+              <li v-for="component in components" :key="component.title">
+                <NavigationMenuLink as-child>
+                  <a
+                    :href="component.href"
+                    class="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                  >
+                    <div class="text-sm font-medium leading-none">{{ component.title }}</div>
+                    <p class="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                      {{ component.description }}
+                    </p>
+                  </a>
+                </NavigationMenuLink>
+              </li>
+            </ul>
+          </NavigationMenuContent>
+        </NavigationMenuItem> -->
+      </NavigationMenuList>
     </NavigationMenu>
   </template>
 
@@ -134,7 +181,11 @@ const components: { title: string, href: string, description: string }[] = [
   },
 ]
 
-const { data: navigation } = await useAsyncData('navigation', () => fetchContentNavigation())
+const { data: navigation } = await useAsyncData('mainNavigation', () =>
+  fetchContentNavigation(queryContent('/en')),
+  {
+    transform: (data) => data[0].children?.filter((item) => item.title !== ''),
+  })
 
 console.log('navigation', navigation.value)
 </script>
