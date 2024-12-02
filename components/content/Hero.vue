@@ -13,7 +13,7 @@
 
     <div class="grid grid-cols-2 gap-8 justify-center" v-motion-fade>
         <div v-if="ctaButtonText && ctaButtonLink" class="flex justify-end" v-motion-fade :delay="2700">
-            <Button variant="primary" :to="ctaButtonLink">{{ ctaButtonText }}</Button>
+            <Button variant="primary" :to="ctaButtonLink" size="lg">{{ ctaButtonText }}</Button>
         </div>
         <div class="flex items-center space-x-8" v-motion-fade :delay="2900">
             <Avatars :items="avatars" />
