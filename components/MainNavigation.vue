@@ -133,4 +133,8 @@ const components: { title: string, href: string, description: string }[] = [
       'A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.',
   },
 ]
+
+const { data: navigation } = await useAsyncData('navigation', () => fetchContentNavigation())
+
+console.log('navigation', navigation.value)
 </script>
