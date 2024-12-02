@@ -10,8 +10,6 @@ const route = useRoute()
 const { data: page } = await useAsyncData(route.path,
     () => queryContent(route.path)
         .findOne()
-        // .where({ _extension: 'md', navigation: { $ne: false } })
-        // .findSurround(removeTrailingSlash(route.path))
 )
 
 console.log('page', page)
