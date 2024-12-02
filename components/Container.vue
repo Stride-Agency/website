@@ -7,7 +7,7 @@
 <script lang="ts" setup>
 const props = defineProps({
     size: {
-        type: String as PropType<'sm' | 'xl'>,
+        type: String as PropType<'sm' | 'lg' | 'xl'>,
         default: 'xl'
     }
 })
@@ -16,6 +16,8 @@ const maxWidthClass = computed(() => {
     switch (props.size) {
         case 'sm':
             return 'w-full sm:max-w-[54rem]'
+        case 'lg':
+            return 'w-full lg:max-w-[74rem]'
         case 'xl':
             return ''
         default:

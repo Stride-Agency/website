@@ -4,7 +4,7 @@
     <h1 class="font-medium text-neutral-100 text-4xl" v-motion-pop :delay="300">
         <BlurReveal :duration="1" :delay="1.1">
             <span v-if="headingOne">{{ headingOne }}</span>
-            <mark v-if="headingTwo" class="italic bg-text-highlight-1 text-transparent bg-clip-text text-8xl pr-[0.2em] mr-[0.2em]">{{ headingTwo }}</mark>
+            <mark v-if="headingTwo" class="italic bg-text-highlight-1 text-transparent bg-clip-text text-8xl pr-[0.2em] mr-[0.2em] font-bold">{{ headingTwo }}</mark>
         </BlurReveal>
     </h1>
     <p class="text-xl" v-motion-fade :delay="2500">

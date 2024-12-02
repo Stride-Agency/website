@@ -19,6 +19,7 @@ module.exports = {
       primary: 'blue',
       neutral: {
         '100': '#D9D9E6',
+        '200': '#A3A3B8',
         DEFAULT: '#050812'
       },
       gray: {
@@ -81,6 +82,8 @@ module.exports = {
     },
     backgroundImage: {
       'text-highlight-1': 'linear-gradient(to right, #42C4EF, #5DA7FF, #A073FF, #BF56FD, #DF00F9)',
+      'electric-green': 'linear-gradient(to right, #74E9F1, #22FF52)',
+      'light-blue': 'linear-gradient(to right, #9CC2FC, #67C5FA)',
       'hero-light': "url('/images/hero-light.svg')"
     },
     container: {
