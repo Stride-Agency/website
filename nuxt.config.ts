@@ -12,7 +12,8 @@ export default defineNuxtConfig({
       '@nuxthq/studio',
       '@nuxtjs/i18n',
       '@vueuse/motion/nuxt',
-      '@nuxt/image'
+      '@nuxt/image',
+      'nuxt-svgo'
     ],
     i18n: {
         strategy: 'prefix',
@@ -39,6 +40,10 @@ export default defineNuxtConfig({
         },
         config: {},
         viewer: true,
+    },
+    svgo: {
+        autoImportPath: "assets/icons/",
+        defaultImport: "component",
     },
     components: ['components', 'content/components']
 })

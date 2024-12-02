@@ -2,4 +2,4 @@
 icon: something
 ---
 
-# Growth Hacking page12
+# Growth Hacking page
