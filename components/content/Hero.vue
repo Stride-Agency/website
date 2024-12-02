@@ -1,9 +1,10 @@
 <template>
-<section class="relative flex items-center overflow-hidden min-h-screen hero-gradient ">
+<section class="relative flex items-center overflow-hidden min-h-screen hero-gradient">
     <Container class="text-center z-10 space-y-10" size="sm">
     <h1 class="font-medium text-neutral-100 text-4xl" v-motion-pop :delay="300">
         <BlurReveal :duration="1" :delay="1.1">
-            <ContentSlot :use="$slots.heading" />
+            <span v-if="headingOne">{{ headingOne }}</span>
+            <mark v-if="headingTwo" class="italic bg-text-highlight-1 text-transparent bg-clip-text text-8xl">{{ headingTwo }}</mark>
         </BlurReveal>
     </h1>
     <p class="text-xl" v-motion-fade :delay="2500">
@@ -71,6 +72,12 @@ const logos = [
 ]
 
 defineProps({
+    headingOne: {
+        type: String,
+    },
+    headingTwo: {
+        type: String,
+    },
     CTAButtonText: {
         type: String,
     },
@@ -84,11 +91,6 @@ defineProps({
 </script>
 
 <style scoped>
-strong {
-    @apply italic bg-text-highlight-1 text-transparent bg-clip-text text-8xl;
-}
-
-
 @keyframes fadeOut {
     0% {
         fill: rgba(128, 0, 128, 0.7);

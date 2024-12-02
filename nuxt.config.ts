@@ -18,13 +18,13 @@ export default defineNuxtConfig({
         strategy: 'prefix',
         locales: ["de", "en"],
         defaultLocale: 'en',
-        detectBrowserLanguage: {
-            useCookie: true,
-            cookieKey: 'i18n_redirected',
-            redirectOn: 'root',
-            alwaysRedirect: true,
-            fallbackLocale: 'en'
-        }
+        // detectBrowserLanguage: {
+        //     useCookie: true,
+        //     cookieKey: 'i18n_redirected',
+        //     redirectOn: 'root',
+        //     alwaysRedirect: true,
+        //     fallbackLocale: 'en'
+        // }
     },
     postcss: {
         plugins: {
