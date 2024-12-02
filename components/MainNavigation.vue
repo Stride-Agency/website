@@ -1,8 +1,8 @@
 <template>
     <NavigationMenu class="z-40">
-      <NavigationMenuList>
+      <NavigationMenuList id="main-nav">
         <NavigationMenuItem v-for="item in navigation">
-          <NavigationMenuLink v-if="item.children?.length === 0" :href="item._path" :class="navigationMenuTriggerStyle()">
+          <NavigationMenuLink v-if="!item.children" :href="item._path" :class="navigationMenuTriggerStyle()">
             {{ item.title }}
           </NavigationMenuLink>
           <NavigationMenuTrigger v-else>{{ item.title }}</NavigationMenuTrigger>
@@ -86,3 +86,9 @@ const { data: navigation } = await useAsyncData('mainNavigation', () =>
 
 console.log('navigation', navigation.value)
 </script>
+
+<style scoped>
+#main-nav li:last-child a {
+  @apply bg-green-800 text-lime border border-[rgba(255,255,255,0.05)] hover:bg-green-900;
+}
+</style>
