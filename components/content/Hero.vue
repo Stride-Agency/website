@@ -4,7 +4,7 @@
     <h1 class="font-medium text-neutral-100 text-4xl" v-motion-pop :delay="300">
         <BlurReveal :duration="1" :delay="1.1">
             <span v-if="headingOne">{{ headingOne }}</span>
-            <mark v-if="headingTwo" class="italic bg-text-highlight-1 text-transparent bg-clip-text text-8xl">{{ headingTwo }}</mark>
+            <mark v-if="headingTwo" class="italic bg-text-highlight-1 text-transparent bg-clip-text text-8xl pr-[0.2em] mr-[0.2em]">{{ headingTwo }}</mark>
         </BlurReveal>
     </h1>
     <p class="text-xl" v-motion-fade :delay="2500">
@@ -12,8 +12,8 @@
     </p>
 
     <div class="grid grid-cols-2 gap-8 justify-center" v-motion-fade>
-        <div v-if="CTAButtonText" class="flex justify-end" v-motion-fade :delay="2700">
-            <Button variant="primary" :to="CTAButtonLink">{{ CTAButtonText }}</Button>
+        <div v-if="ctaButtonText && ctaButtonLink" class="flex justify-end" v-motion-fade :delay="2700">
+            <Button variant="primary" :to="ctaButtonLink">{{ ctaButtonText }}</Button>
         </div>
         <div class="flex items-center space-x-8" v-motion-fade :delay="2900">
             <Avatars :items="avatars" />
@@ -21,10 +21,10 @@
         </div>
     </div>
 
-    <StaticLogoCloud :logos="logos" title="From Startups to Industry Leaders" v-motion-fade :delay="3100" />
+    <StaticLogoCloud v-if="logoTitle" :logos="logos" :title="logoTitle" v-motion-fade :delay="3100" />
 
     </Container>
-    <div class="testsvg h-screen w-screen bg-hero-light bg-no-repeat bg-cover absolute"></div>
+    <div class="h-[200%] w-[200%] bg-hero-light bg-no-repeat bg-cover bg-[position:bottom_50px_right_100px] absolute inset-0"></div>
 
     <RetroGrid />
 </section>
@@ -78,14 +78,17 @@ defineProps({
     headingTwo: {
         type: String,
     },
-    CTAButtonText: {
+    ctaButtonText: {
         type: String,
     },
-    CTAButtonLink: {
+    ctaButtonLink: {
         type: String,
     },
     clientLogoText: {
         type: String,
+    },
+    logoTitle: {
+        type: String
     }
 })
 </script>

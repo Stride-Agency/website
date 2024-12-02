@@ -1,7 +1,4 @@
 <template>
-    <!-- <Hero /> -->
-    App
-
     <ContentRenderer v-if="page?.body" :value="page" />
 </template>
 
