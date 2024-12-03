@@ -1,0 +1,1 @@
+import{r as o}from"./CN9aoUYk.js";import{m as s,f as t,g as e}from"./B0aOfVXM.js";import"./CxYJgpPD.js";const c={},n={class:"mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2"};function a(r,d){return t(),e("div",n,[o(r.$slots,"default")])}const f=s(c,[["render",a]]);export{f as default};
