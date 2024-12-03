@@ -19,7 +19,9 @@ module.exports = {
       primary: 'blue',
       neutral: {
         '100': '#D9D9E6',
-        '200': '#A3A3B8',
+        '200': '#C9C9DC',
+        '300': '#A3A3B8',
+        '900': '#0E121F',
         DEFAULT: '#050812'
       },
       gray: {

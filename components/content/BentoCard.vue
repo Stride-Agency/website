@@ -1,12 +1,12 @@
 <template>
-    <div :class="cardClasses">
-        <div class="overflow-hidden rounded-lg bg-gray-800 ring-1 ring-white/15 max-lg:rounded-t-[2rem] lg:rounded-tl-[2rem]">
-            <div>
-                <ContentSlot :use="$slots.image" imgClasses="" />
+    <div class="flex p-px" :class="cardClasses">
+        <div class="w-full overflow-hidden rounded-lg bg-neutral-900 ring-1 ring-white/15 max-lg:rounded-t-[2rem] lg:rounded-tl-[2rem]">
+            <div class="[&>img]:object-cover [&>img]:object-left [&>img]:h-full [&>img]:w-full">
+                <ContentSlot :use="$slots.image" unwrap="p" />
             </div>
             <div class="p-10">
-                <p class="mt-2 text-lg font-medium tracking-tight text-white">{{ title }}</p>
-                <p class="mt-2 max-w-lg text-sm/6 text-gray-400">
+                <p class="mt-2 font-medium tracking-tight text-neutral-100 text-[2rem]">{{ title }}</p>
+                <p class="mt-2 max-w-lg text-lg text-neutral-200">
                     {{ description }}
                 </p>
             </div>
@@ -26,15 +26,14 @@ defineProps({
     },
     href: {
         type: String,
-        required: true
     },
     cardClasses: {
         type: String,
-        default: 'flex p-px lg:col-span-4'
+        required: true
     },
     imageClasses: {
         type: String,
-        default: 'h-80 object-cover object-left'
+        default: ''
     }
 })
 </script>
