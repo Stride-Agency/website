@@ -1,0 +1,1 @@
+import{r as o}from"./B-5wLeco.js";import{a as t,f as r,g as s}from"./CiluewUX.js";import"./CxYJgpPD.js";const p=t({__name:"BentoGrid",setup(l){return console.log("$slots.default",$slots.default),(e,a)=>(r(),s("div",null,[o(e.$slots,"default")]))}});export{p as default};
