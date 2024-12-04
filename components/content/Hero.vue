@@ -24,7 +24,7 @@
     <StaticLogoCloud v-if="logoTitle" :logos="logos" :title="logoTitle" v-motion-fade :delay="3100" />
 
     </Container>
-    <div class="h-[200%] w-[200%] bg-hero-light bg-no-repeat bg-cover bg-[position:bottom_50px_right_100px] absolute inset-0"></div>
+    <div class="h-[200%] w-[200%] bg-hero-light-3 bg-no-repeat bg-cover bg-[position:bottom_50px_right_100px] absolute inset-0"></div>
 
     <RetroGrid />
 </section>

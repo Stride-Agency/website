@@ -17,7 +17,7 @@ const maxWidthClass = computed(() => {
         case 'sm':
             return 'w-full sm:max-w-[54rem]'
         case 'lg':
-            return 'w-full lg:max-w-[74rem]'
+            return 'w-full lg:max-w-[78rem]'
         case 'xl':
             return ''
         default:

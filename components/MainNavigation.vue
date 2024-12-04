@@ -7,22 +7,23 @@
           </NavigationMenuLink>
           <NavigationMenuTrigger v-else>{{ item.title }}</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul class="grid gap-3 py-6 px-3 md:w-[400px] lg:w-[700px] lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
+            <ul class="grid gap-3 py-6 px-3 md:w-[400px] lg:w-[700px] lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]" :class="item.color">
               <li v-for="child in item.children?.filter(c => c._path !== item._path)">
-                <div class="uppercase text-gray-800 font-medium px-3">{{ child.title }}</div>
+                <div class="uppercase text-gray-800 font-medium px-3 mb-2">{{ child.title }}</div>
                 <ul>
                   <li v-for="subChild in child.children?.filter(c => c._path !== child._path)">
                     <NavigationMenuLink as-child>
                       <NuxtLink
                         :to="subChild._path"
-                        class="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                        class="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-opacity-20"
+                        :class="child.linkClasses"
                       >
                         <div class="flex">
-                          <NavigationMenuLinkIcon class="mr-4" />
+                          <NavigationMenuLinkIcon v-if="subChild.icon" class="mr-4" :name="`${child.color}-${subChild.icon}`" />
                           <div>
-                            <div class="text-sm font-medium leading-none">{{ subChild.title }}</div>
-                            <p class="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                              Re-usable components built using Radix UI and Tailwind CSS.
+                            <div class="text-sm font-medium leading-none text-white mb-1">{{ subChild.title }}</div>
+                            <p class="line-clamp-2 text-sm leading-snug text-muted-foreground text-gray-600">
+                              {{ subChild.description }}
                             </p>
                           </div>
                         </div>
@@ -83,8 +84,6 @@ const { data: navigation } = await useAsyncData('mainNavigation', () =>
   {
     transform: (data) => data[0].children?.filter((item) => item.title !== ''),
   })
-
-console.log('navigation', navigation.value)
 </script>
 
 <style scoped>

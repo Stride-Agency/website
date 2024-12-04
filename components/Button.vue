@@ -63,7 +63,7 @@ const componentType = computed(() => (props.to ? NuxtLink : 'button'))
 const classes = computed(() => {
   return [
     // general classes
-    'rounded-xl bg-purple text-white bg-gradient-to-r from-purple-800 to-purple-600 hover:from-purple-600 hover:to-purple-500 shadow-[inset_0_4px_4px_rgba(255,255,255,0.05),_0_2px_2px_rgba(21,9,84,0.2)] transition-all duration-300 ease-in-out',
+    'rounded-xl bg-purple text-white-100 bg-gradient-to-r from-purple-800 to-purple-600 hover:from-purple-600 hover:to-purple-500 shadow-[inset_0_4px_4px_rgba(255,255,255,0.05),_0_2px_2px_rgba(21,9,84,0.2)] transition-all duration-300 ease-in-out',
     {
       // variant classes
       'w-full': props.full,

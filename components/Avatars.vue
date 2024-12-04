@@ -87,17 +87,17 @@ function handleMouseMove(event: MouseEvent) {
         <div
           class="absolute -bottom-px left-10 z-30 h-px w-2/5 bg-gradient-to-r from-transparent via-sky-500 to-transparent"
         />
-        <div class="relative z-30 text-base font-bold text-white">
+        <div class="relative z-30 text-base font-bold text-white-100">
           {{ item.name }}
         </div>
-        <div class="text-xs text-white">{{ item.designation }}</div>
+        <div class="text-xs text-white-100">{{ item.designation }}</div>
       </div>
 
       <!-- Avatar Image -->
       <img
         :src="item.image"
         :alt="item.name"
-        class="relative !m-0 size-14 rounded-full border-2 border-white object-cover object-top !p-0 transition duration-500"
+        class="relative !m-0 size-14 rounded-full border-2 border-white-100 object-cover object-top !p-0 transition duration-500"
       />
     </div>
   </div>

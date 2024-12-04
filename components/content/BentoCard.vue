@@ -4,7 +4,7 @@
             <div class="[&>img]:object-cover [&>img]:object-left [&>img]:h-full [&>img]:w-full">
                 <ContentSlot :use="$slots.image" unwrap="p" />
             </div>
-            <div class="p-10">
+            <div class="px-10 py-5">
                 <p class="mt-2 font-medium tracking-tight text-neutral-100 text-[2rem]">{{ title }}</p>
                 <p class="mt-2 max-w-lg text-lg text-neutral-200">
                     {{ description }}

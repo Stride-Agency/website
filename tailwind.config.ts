@@ -10,7 +10,8 @@ module.exports = {
     './components/**/*.{ts,tsx,vue}',
     './app/**/*.{ts,tsx,vue}',
     './src/**/*.{ts,tsx,vue}',
-    './app.vue'
+    './app.vue',
+    './content/**/*.md',
 	],
   prefix: "",
   theme: {
@@ -25,6 +26,7 @@ module.exports = {
         DEFAULT: '#050812'
       },
       gray: {
+        '600': '#C3C5C9',
         '700': '#2A2D33',
         '800': '#A4A8AF'
       },
@@ -41,6 +43,12 @@ module.exports = {
         '900': '#2d179b',
         '950': '#180c69',
         DEFAULT: '#3319B9'
+      },
+      ecommerce: {
+        DEFAULT: '#198B31'
+      },
+      software: {
+        DEFAULT: '#5786FC'
       },
       'green': {
         '50': '#f0fdf9',
@@ -70,7 +78,8 @@ module.exports = {
         '950': '#013214',
     },
       white: {
-        DEFAULT: '#F1EFFC'
+        '100': '#F1EFFC',
+        DEFAULT: '#FFF'
       }
     },
     fontFamily: {
@@ -86,7 +95,8 @@ module.exports = {
       'text-highlight-1': 'linear-gradient(to right, #42C4EF, #5DA7FF, #A073FF, #BF56FD, #DF00F9)',
       'electric-green': 'linear-gradient(to right, #74E9F1, #22FF52)',
       'light-blue': 'linear-gradient(to right, #9CC2FC, #67C5FA)',
-      'hero-light': "url('/images/hero-light.svg')"
+      'hero-light': "url('/images/hero-light.svg')",
+      'hero-light-3': "url('/images/hero-light-3.svg')",
     },
     container: {
       center: true,
