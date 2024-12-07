@@ -7,13 +7,14 @@
             <p class="text-balance text-gray-300">
               {{ $t('footer.short_description') }}
             </p>
-            <div class="flex gap-x-6">
-              <NuxtLink v-for="item in navigation.social" :key="item.name" :to="item.href" external class="text-gray-400 hover:text-gray-300">
-                <span class="sr-only">{{ item.name }}</span>
-                <component :is="getIcon(item.icon)" class="size-6" aria-hidden="true" />
-              </NuxtLink>
+            <div class="gap-x-6">
+              <div class="uppercase text-gray-800 block mb-2 font-medium">{{ $t('footer.follow_us') }}</div>
+              <Button v-for="item in navigation.social" :key="item.name" variant="glassmorphism" size="sm" :to="item.href" external class="text-white-100 inline-flex items-center !px-2">
+                <component :is="getIcon(item.icon)" class="size-6 mr-2" aria-hidden="true" />
+                <span>{{ item.name }}</span>
+              </Button>
             </div>
-            <p class=" text-gray-400 hidden md:block text-sm">&copy; {{ new Date().getFullYear() }} Stride Agency. All rights reserved.</p>
+            <p class=" text-gray-400 hidden md:block text-sm">&copy; {{ new Date().getFullYear() }} {{ $t('footer.copyright')}}</p>
           </div>
               <div>
                 <h3 class="font-medium text-gray-800 uppercase">E-Commerce</h3>
@@ -32,7 +33,7 @@
                 </ul>
               </div>
               <div class="mt-10 md:mt-0">
-                <h3 class=" font-medium text-gray-800 uppercase">Legal</h3>
+                <h3 class=" font-medium text-gray-800 uppercase">{{ $t('footer.legal')}}</h3>
                 <ul role="list" class="mt-6 space-y-4">
                   <li v-for="item in legalNavigation" :key="item.name">
                     <NuxtLink :to="item._path" class=" text-white hover:text-white">{{ item.title }}</NuxtLink>

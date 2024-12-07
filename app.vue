@@ -2,6 +2,7 @@
     <div>
         <Header />
         <NuxtPage />
+        <Testimonials />
         <Footer />
     </div>
 </template>

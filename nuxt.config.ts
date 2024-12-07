@@ -62,5 +62,8 @@ export default defineNuxtConfig({
             path: '~/components/ui/navigation-menu',
             pathPrefix: false,
         },
-    ]
+    ],
+    imports: {
+        dirs: ['types/**/*.ts']
+    },
 })
