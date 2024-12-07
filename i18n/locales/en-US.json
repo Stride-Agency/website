@@ -1,0 +1,10 @@
+{
+    "header": {
+        "cta_button_text_contact_us_with_estimated_time": "@:header.cta_button_text_contact_us @:header.cta_button_text_estimated_time",
+        "cta_button_text_contact_us": "Contact Us",
+        "cta_button_text_estimated_time": "– 1 Minute",
+        "menu": "Menu",
+        "close": "Close"
+    },
+    "footer.short_description": "E-Commerce & Software Solutions for those who dare to dream bigger."
+}

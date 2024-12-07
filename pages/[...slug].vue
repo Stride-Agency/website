@@ -5,11 +5,10 @@
 <script setup lang="ts">
 const { locale } = useI18n()
 const route = useRoute()
+const routeWithoutLocale = route.path.replace(`/${locale.value}`, '')
 
 const { data: page } = await useAsyncData(route.path,
-    () => queryContent(route.path)
+    () => queryContent(routeWithoutLocale)
         .findOne()
 )
-
-console.log('page', page)
 </script>

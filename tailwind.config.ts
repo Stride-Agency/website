@@ -97,6 +97,8 @@ module.exports = {
       'light-blue': 'linear-gradient(to right, #9CC2FC, #67C5FA)',
       'hero-light': "url('/images/hero-light.svg')",
       'hero-light-3': "url('/images/hero-light-3.svg')",
+      'grid-lines-1': "url('/images/grid-lines-1.png')",
+      'stride-footer-font': "url('/images/stride-footer-font.svg')",
     },
     container: {
       center: true,

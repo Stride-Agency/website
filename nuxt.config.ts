@@ -1,5 +1,6 @@
 import { defineNuxtConfig } from 'nuxt/config'
-import { resolve } from "node:path";
+import en from './locales/en-US.json';
+import de from './locales/de-DE.json';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -15,10 +16,17 @@ export default defineNuxtConfig({
       '@nuxt/image',
       'nuxt-svgo'
     ],
+    content: {
+        locales: ['de', 'en'],
+        defaultLocale: 'en'
+    },
     i18n: {
         strategy: 'prefix',
-        locales: ["de", "en"],
         defaultLocale: 'en',
+        locales: [
+            { code: 'en', file: 'en-US.json'},
+            { code: 'de', file: 'de-DE.json'},
+        ],
         // detectBrowserLanguage: {
         //     useCookie: true,
         //     cookieKey: 'i18n_redirected',
@@ -45,5 +53,14 @@ export default defineNuxtConfig({
         autoImportPath: "assets/icons/",
         defaultImport: "component",
     },
-    components: ['components', 'content/components']
+    components: ['components', 'content/components',
+        {
+            path: '~/components/ui/sheet',
+            pathPrefix: false,
+        },
+        {
+            path: '~/components/ui/navigation-menu',
+            pathPrefix: false,
+        },
+    ]
 })

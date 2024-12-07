@@ -1,1 +1,0 @@
-# Stride For Good page
