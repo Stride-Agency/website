@@ -6,5 +6,8 @@
         "menu": "Menu",
         "close": "Close"
     },
-    "footer.short_description": "E-Commerce & Software Solutions for those who dare to dream bigger."
+    "footer": {
+        "short_description": "E-Commerce & Software Solutions for those who dare to dream bigger.",
+        "built_with": "Built with {link} – modern technology for E-Commerce & SaaS solutions"
+    }
 }

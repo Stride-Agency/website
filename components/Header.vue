@@ -1,5 +1,5 @@
 <template>
-    <header class="fixed left-2 right-2 flex justify-between items-center mt-4 lg:mt-8 space-x-2 sm:space-x-8 z-50 px-2 py-2 rounded-2xl border border-[#ffffff17] w-auto lg:w-auto mx-auto max-w-4xl" style="backdrop-filter: blur(24px) saturate(140%); background: hsla(0,0%,4%,.2)">
+    <header class="fixed left-2 right-2 flex justify-between items-center mt-2 lg:mt-8 space-x-2 sm:space-x-8 z-50 px-2 py-2 rounded-2xl border border-[#ffffff17] w-auto lg:w-auto mx-auto max-w-4xl" style="backdrop-filter: blur(24px) saturate(140%); background: hsla(0,0%,4%,.2)">
         <NuxtLink :to="`/${locale}`">
             <Logo />
         </NuxtLink>
