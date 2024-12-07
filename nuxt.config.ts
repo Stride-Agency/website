@@ -53,7 +53,7 @@ export default defineNuxtConfig({
         autoImportPath: "assets/icons/",
         defaultImport: "component",
     },
-    components: ['components', 'content/components',
+    components: ['components',
         {
             path: '~/components/ui/sheet',
             pathPrefix: false,
