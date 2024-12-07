@@ -1,0 +1,1 @@
+import{a as t,f as r,I as n,w as o,h as i,K as l,n as c,L as d}from"./B-pOYNOu.js";const _=t({__name:"BentoGrid",props:{gridClasses:{type:String,required:!0}},setup(e){return(s,m)=>{const a=d;return r(),n(a,{size:"lg"},{default:o(()=>[i("div",{class:c(["mt-10 grid gap-4 sm:mt-16",e.gridClasses])},[l(s.$slots,"default")],2)]),_:3})}}});export{_ as default};
