@@ -46,7 +46,7 @@
 </template>
 
 <script setup lang="ts">
-import { navigationMenuTriggerStyle } from '@/components/ui/navigation-menu'
+import { navigationMenuTriggerStyle } from '@/components/ui/navigation-menu/navigation-menu-helper'
 defineEmits(['update:open'])
 
 defineProps({
@@ -63,8 +63,6 @@ const { data: navigation } = await useAsyncData('mainNavigation', () =>
     return data[0].children
   }
 })
-
-console.log('navigation', navigation.value)
 </script>
 
 <style scoped>

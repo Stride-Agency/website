@@ -1,6 +1,4 @@
 import { defineNuxtConfig } from 'nuxt/config'
-import en from './locales/en-US.json';
-import de from './locales/de-DE.json';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({

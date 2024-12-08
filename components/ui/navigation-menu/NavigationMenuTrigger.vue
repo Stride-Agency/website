@@ -7,7 +7,7 @@ import {
   useForwardProps,
 } from 'radix-vue'
 import { computed, type HTMLAttributes } from 'vue'
-import { navigationMenuTriggerStyle } from '@/components/ui/navigation-menu'
+import { navigationMenuTriggerStyle } from '@/components/ui/navigation-menu/navigation-menu-helper'
 
 const props = defineProps<NavigationMenuTriggerProps & { class?: HTMLAttributes['class'] }>()
 

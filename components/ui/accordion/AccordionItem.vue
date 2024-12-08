@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { cn } from '@/utils'
-import { AccordionItem, type AccordionItemProps, useForwardProps } from 'radix-vue'
+import { AccordionItem as AccordionItemRadixVue, type AccordionItemProps, useForwardProps } from 'radix-vue'
 import { computed, type HTMLAttributes } from 'vue'
 
 const props = defineProps<AccordionItemProps & { class?: HTMLAttributes['class'] }>()
@@ -15,10 +15,10 @@ const forwardedProps = useForwardProps(delegatedProps)
 </script>
 
 <template>
-  <AccordionItem
+  <AccordionItemRadixVue
     v-bind="forwardedProps"
     :class="cn('border-b', props.class)"
   >
     <slot />
-  </AccordionItem>
+  </AccordionItemRadixVue>
 </template>

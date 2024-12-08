@@ -2,8 +2,8 @@
 import { cn } from '@/utils'
 import { ChevronDown } from 'lucide-vue-next'
 import {
-  AccordionHeader,
-  AccordionTrigger,
+  AccordionHeader as AccordionHeaderRadixVue,
+  AccordionTrigger as AccordionTriggerRadixVue,
   type AccordionTriggerProps,
 } from 'radix-vue'
 import { computed, type HTMLAttributes } from 'vue'
@@ -18,8 +18,8 @@ const delegatedProps = computed(() => {
 </script>
 
 <template>
-  <AccordionHeader class="flex">
-    <AccordionTrigger
+  <AccordionHeaderRadixVue class="flex">
+    <AccordionTriggerRadixVue
       v-bind="delegatedProps"
       :class="
         cn(
@@ -34,6 +34,6 @@ const delegatedProps = computed(() => {
           class="h-4 w-4 shrink-0 transition-transform duration-200"
         />
       </slot>
-    </AccordionTrigger>
-  </AccordionHeader>
+    </AccordionTriggerRadixVue>
+  </AccordionHeaderRadixVue>
 </template>

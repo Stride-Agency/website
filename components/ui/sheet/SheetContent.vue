@@ -11,7 +11,7 @@ import {
   useForwardPropsEmits,
 } from 'radix-vue'
 import { computed, type HTMLAttributes } from 'vue'
-import { type SheetVariants, sheetVariants } from '.'
+import { type SheetVariants, sheetVariants } from './sheet-helper'
 
 interface SheetContentProps extends DialogContentProps {
   class?: HTMLAttributes['class']
