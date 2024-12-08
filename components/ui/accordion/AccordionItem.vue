@@ -17,7 +17,8 @@ const forwardedProps = useForwardProps(delegatedProps)
 <template>
   <AccordionItemRadixVue
     v-bind="forwardedProps"
-    :class="cn('border-b', props.class)"
+    :class="cn(props.class)"
+    class="bg-neutral-800 bg-opacity-50 border border-white border-opacity-10 rounded-2xl"
   >
     <slot />
   </AccordionItemRadixVue>

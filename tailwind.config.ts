@@ -23,6 +23,7 @@ module.exports = {
         '200': '#C9C9DC',
         '300': '#A3A3B8',
         '400': '#090A23',
+        '800': '#151A29',
         '900': '#0E121F',
         DEFAULT: '#050812'
       },
@@ -90,7 +91,8 @@ module.exports = {
       '6xl': ['4rem', {
         lineHeight: '4rem',
         letterSpacing: '-0.04rem'
-      }]
+      }],
+      'base': '1.125rem'
     },
     backgroundImage: {
       'text-highlight-1': 'linear-gradient(to right, #42C4EF, #5DA7FF, #A073FF, #BF56FD, #DF00F9)',
@@ -98,6 +100,7 @@ module.exports = {
       'light-blue': 'linear-gradient(to right, #9CC2FC, #67C5FA)',
       'hero-light': "url('/images/hero-light.svg')",
       'hero-light-3': "url('/images/hero-light-3.svg')",
+      'light-4': "url('/images/light-4.png')",
       'grid-lines-1': "url('/images/grid-lines-1.png')",
       'stride-footer-font': "url('/images/stride-footer-font.svg')",
     },
