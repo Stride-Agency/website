@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     compatibilityDate: '2024-11-01',
     devtools: { enabled: true },
     runtimeConfig: {
-        PIPEDRIVE_API_TOKEN: ""
+        LINEAR_API_KEY: ""
     },
     modules: [
     'shadcn-nuxt',

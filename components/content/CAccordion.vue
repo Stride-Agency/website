@@ -5,7 +5,7 @@
         <Accordion type="single" class="w-full space-y-4" collapsible>
             <ContentSlot :use="$slots.default" />
         </Accordion>
-        <AccordionCta title="Didn't find the answer you were looking for?" button-text="Ask a Question" />
+        <AccordionCta :title="ctaTitle" :button-text="ctaButtonText" />
     </Container>
 </div>
 </template>
@@ -16,13 +16,13 @@ defineProps({
         type: String,
         required: true
     },
-    // ctaTitle: {
-    //     type: String,
-    //     required: true
-    // },
-    // ctaButtonText: {
-    //     type: String,
-    //     required: true
-    // }
+    ctaTitle: {
+        type: String,
+        required: true
+    },
+    ctaButtonText: {
+        type: String,
+        required: true
+    }
 })
 </script>

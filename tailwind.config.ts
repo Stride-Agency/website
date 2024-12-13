@@ -92,6 +92,7 @@ module.exports = {
         lineHeight: '4rem',
         letterSpacing: '-0.04rem'
       }],
+      '3xl': '2rem',
       'base': '1.125rem'
     },
     backgroundImage: {

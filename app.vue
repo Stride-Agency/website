@@ -3,6 +3,7 @@
         <Header />
         <NuxtPage />
         <Footer />
+        <Toaster />
     </div>
 </template>
 

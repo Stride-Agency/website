@@ -14,14 +14,16 @@
         "legal": "Legal"
     },
     "faq": {
-        "modal": {  
+        "modal": {
             "title": "Have a Question?",
             "description": "Tell us what’s on your mind, and we’ll get back to you with the answers you need—fast and straightforward.",
             "send_question_button": "Send Question",
             "form": {
                 "message": {
                     "label": "Your Question"
-                }
+                },
+                "success_title": "Your question has been sent",
+                "success_message": "We'll get back to you as soon as possible."
             }
         }
     }
