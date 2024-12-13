@@ -12,5 +12,17 @@
         "follow_us": "Follow Us",
         "copyright": "Stride Agency. All rights reserved.",
         "legal": "Legal"
+    },
+    "faq": {
+        "modal": {  
+            "title": "Have a Question?",
+            "description": "Tell us what’s on your mind, and we’ll get back to you with the answers you need—fast and straightforward.",
+            "send_question_button": "Send Question",
+            "form": {
+                "message": {
+                    "label": "Your Question"
+                }
+            }
+        }
     }
 }

@@ -46,7 +46,7 @@
 </template>
 
 <script setup lang="ts">
-import { navigationMenuTriggerStyle } from '@/components/ui/navigation-menu/navigation-menu-helper'
+import { navigationMenuTriggerStyle } from '@/components/ui/navigation-menu'
 defineEmits(['update:open'])
 
 defineProps({
