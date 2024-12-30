@@ -31,6 +31,25 @@
         font-weight: 600;
         src: url('../fonts/Aeonik-Bold.otf') format('opentype'),
     }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    h1,
+    .h1 {
+      @apply text-6xl font-medium block mb-4;
+    }
+
+    h2,
+    .h2 {
+      @apply text-5xl font-medium block;
+    }
+
+    h3, h4, h5, h6,
+    .h3, .h4, .h5, .h6 {
+      @apply text-lg font-medium block;
+    }
 }
 
 /* If the user prefers dark mode,
