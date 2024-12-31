@@ -3,11 +3,29 @@
 ::c-container{size="sm"}
 # Impressum
 
-**Business Name**:br-reimagine Agency Group LLC
+**Business Name:**
 
-**Postal address**:br30 N Gould St Ste N\:brSheridan\:br82801\:brWyoming\:brUnited States
+Reimagine Agency Group LLC
 
-**Contact**:brE-Mail: <info@stride.agency>\:brPhone: +49 176 567 405 21​
+**Postal address:**
 
-**Business identification number**:br36-5101620
+30N Gould St Ste N
+
+Sheridan
+
+82801
+
+Wyoming
+
+United States
+
+**Contact**:
+
+E-Mail: <info@stride.agency>
+
+Phone: +49 176 567 405 21​
+
+**Business identification number:**
+
+36-5101620
 ::
