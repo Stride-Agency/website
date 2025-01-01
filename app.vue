@@ -19,8 +19,4 @@ useHead({
         class: 'dark'
     }
 })
-
-useScript({
-  src: 'https://cdn.iubenda.com/iubenda.js',
-})
 </script>

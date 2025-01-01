@@ -1,5 +1,5 @@
 <template>
-    <footer class="bg-grid-lines-1 bg-no-repeat bg-cover bg-left-top sm:bg-bottom min-h-[856px] relative mt-16 border-t-[#ffffff17] border-t pb-32">
+    <footer class="bg-grid-lines-1 bg-no-repeat bg-cover bg-left-top sm:bg-bottom min-h-[856px] relative mt-16 border-t-[#ffffff17] border-t pb-32 bg-neutral">
       <Container size="lg" class="mx-auto pb-8 pt-16 sm:pt-24 lg:pt-32">
         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-8 lg:gap-8">
           <div class="space-y-8">

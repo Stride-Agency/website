@@ -1,5 +1,5 @@
 <template>
-    <a :href="link" class="iubenda-nostyle iubenda-noiframe iubenda-embed iubenda-noiframe iub-body-embed" :title="title" target="_blank">{{ title }}</a>
+    <a :href="link" class="iubenda-nostyle iubenda-noiframe iubenda-embed iubenda-noiframe iub-body-embed" :title="title">{{ title }}</a>
 </template>
 
 <script setup lang="ts">
@@ -9,6 +9,12 @@ defineProps({
 })
 
 useScript({
-  src: 'https://cdn.iubenda.com/iubenda.js',
+    src: 'https://cdn.iubenda.com/iubenda.js',
+})
+
+useHead({
+    bodyAttrs: {
+        class: 'bg-white text-body'
+    },
 })
 </script>
