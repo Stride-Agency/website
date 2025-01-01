@@ -2,8 +2,7 @@
     <a :href="link" class="iubenda-nostyle iubenda-noiframe iubenda-embed iubenda-noiframe iub-body-embed" :title="title" target="_blank">{{ title }}</a>
 </template>
 
-
-<script lang="ts">
+<script setup lang="ts">
 defineProps({
     title: String,
     link: String,
