@@ -3,6 +3,7 @@
         <Header />
         <main class="pt-32">
             <NuxtPage />
+
         </main>
         <Footer />
         <Toaster />
@@ -17,5 +18,9 @@ useHead({
     htmlAttrs: {
         class: 'dark'
     }
+})
+
+useScript({
+  src: 'https://cdn.iubenda.com/iubenda.js',
 })
 </script>

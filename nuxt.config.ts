@@ -9,7 +9,7 @@ export default defineNuxtConfig({
         LINEAR_API_KEY: ""
     },
     modules: [
-    'shadcn-nuxt',
+      'shadcn-nuxt',
       '@nuxtjs/tailwindcss',
       '@nuxt/content',
       '@nuxthq/studio',
@@ -17,6 +17,7 @@ export default defineNuxtConfig({
       '@vueuse/motion/nuxt',
       '@nuxt/image',
       'nuxt-svgo',
+      '@nuxt/scripts',
     ],
     content: {
         locales: ['en', 'de'],
