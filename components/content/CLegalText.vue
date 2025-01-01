@@ -1,5 +1,5 @@
 <template>
-    <a :href="link" class="iubenda-nostyle iubenda-noiframe iubenda-embed iubenda-noiframe iub-body-embed" :title="title">{{ title }}</a>
+    <div class="-mx-[25px]"><a :href="link" class="iubenda-nostyle iubenda-noiframe iubenda-embed iubenda-noiframe iub-body-embed" :title="title">{{ title }}</a></div>
 </template>
 
 <script setup lang="ts">
