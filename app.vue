@@ -1,5 +1,6 @@
 <template>
     <div>
+        <CookieConsentManager />
         <Header />
         <main class="pt-32">
             <NuxtPage />
@@ -17,6 +18,6 @@ useHead({
     },
     htmlAttrs: {
         class: 'dark'
-    }
+    },
 })
 </script>

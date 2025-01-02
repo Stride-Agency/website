@@ -70,7 +70,7 @@ const componentType = computed(() => (props.to ? NuxtLink : 'button'))
 const classes = computed(() => {
   return [
     // general classes
-    'rounded-xl transition-all duration-300 ease-in-out',
+    'rounded-md transition-all duration-300 ease-in-out',
     {
       // variant classes
       'w-full': props.full,

@@ -3,13 +3,10 @@
 </template>
 
 <script setup lang="ts">
+const route = useRoute()
 defineProps({
     title: String,
     link: String,
-})
-
-useScript({
-    src: 'https://cdn.iubenda.com/iubenda.js',
 })
 
 useHead({
@@ -17,4 +14,29 @@ useHead({
         class: 'bg-white text-body'
     },
 })
+
+useScript('https://cdn.iubenda.com/iubenda.js')
+
+const reloadIubendaScript = () => {
+  const existingScript = document.querySelector('script[src="https://cdn.iubenda.com/iubenda.js"]');
+  if (existingScript) {
+    existingScript.remove();
+  }
+
+  const newScript = document.createElement('script');
+  newScript.src = 'https://cdn.iubenda.com/iubenda.js';
+  newScript.async = true;
+  document.body.appendChild(newScript);
+};
+
+onMounted(() => {
+  reloadIubendaScript();
+});
+
+watch(
+  () => route.path,
+  () => {
+    reloadIubendaScript();
+  }
+);
 </script>

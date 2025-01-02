@@ -4,7 +4,7 @@
             <Logo />
         </NuxtLink>
         <MainNavigation :is-mobile-nav-open="isMobileNavOpen" @update:open="isMobileNavOpen = $event" />
-        <Button variant="primary" to="/contact" class="text-nowrap hidden lg:block">
+        <Button variant="primary" to="/contact" class="text-nowrap hidden lg:block !px-4 !py-2">
             {{ $t('header.cta_button_text_contact_us_with_estimated_time') }}
         </Button>
         <div class="flex items-center lg:hidden text-xs sm:text-base">
