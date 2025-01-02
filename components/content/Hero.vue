@@ -1,5 +1,5 @@
 <template>
-<section class="relative flex items-center overflow-hidden min-h-screen hero-gradient">
+<section class="relative flex items-center overflow-hidden min-h-screen hero-gradient pt-32 -mt-32">
     <Container class="text-center z-10 space-y-10" size="sm">
     <h1 class="font-medium text-neutral-100 text-4xl" v-motion-pop :delay="300">
         <BlurReveal :duration="1" :delay="1.1">

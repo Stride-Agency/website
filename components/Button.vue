@@ -13,7 +13,7 @@
         <span class="absolute inset-0 bg-gradient-to-r from-purple-800 to-purple-600 transition-opacity duration-300 ease-in-out opacity-100 hover:opacity-0"></span>
         <span class="absolute inset-0 bg-gradient-to-r from-purple-600 to-purple-500 transition-opacity duration-300 ease-in-out opacity-0 hover:opacity-100"></span>
       </template>
-      <span :class="{ 'flex': !isLoading, 'invisible': isLoading }" class="flex items-center relative pointer-events-none font-medium">
+      <span :class="{ 'flex': !isLoading, 'invisible': isLoading }" class="flex items-center relative pointer-events-none font-medium h-full">
         <span v-if="!!$slots.icon" class="inline-block mr-2">
           <slot name="icon"></slot>
         </span>
