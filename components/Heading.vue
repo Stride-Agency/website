@@ -5,20 +5,22 @@
 </template>
 
 <script setup lang="ts">
+import type { HeadingTag } from '~/types/heading';
+
 const props = defineProps({
     tag: {
         default: 'div',
-        type: String as PropType<'div' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'>,
+        type: String as PropType<'div' | HeadingTag>,
     },
     size: {
         type: String as PropType<'xxl' | 'xl' | 'l' | 'm' | 's' | 'xs'>,
-        default: 'medium'
+        default: 'xxl'
     }
 })
 
 const sizeClasses = computed(() => {
     const sizeMappings: Record<string, string> = {
-        xxl: 'text-5xl',
+        xxl: 'text-6xl',
         xl: 'text-[44px]',
         l: 'text-4xl',
         m: 'text-[28px]',
