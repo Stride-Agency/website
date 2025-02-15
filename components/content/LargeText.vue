@@ -14,11 +14,15 @@
     @apply whitespace-nowrap inline font-medium text-transparent bg-clip-text;
 }
 
-.large-text strong:nth-child(1) {
+.large-text strong:nth-of-type(1) {
     @apply bg-electric-green;
 }
 
-.large-text strong:nth-child(2) {
-    @apply bg-light-blue;
+.large-text strong:nth-of-type(2) {
+    @apply bg-text-highlight-1;
+}
+
+.large-text strong:nth-of-type(3) {
+    @apply bg-electric-green;
 }
 </style>

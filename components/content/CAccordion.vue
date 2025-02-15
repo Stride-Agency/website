@@ -2,6 +2,9 @@
 <div class="relative bg-light-4 bg-cover bg-no-repeat">
     <Container size="sm" class="py-32 z-30">
         <Heading tag="h2" class="text-center text-balance mb-12 w-3/4 mx-auto">{{ title }}</Heading>
+        <p v-if="description">
+            {{ description }}
+        </p>
         <Accordion type="single" class="w-full space-y-4" collapsible>
             <ContentSlot :use="$slots.default" />
         </Accordion>
@@ -15,6 +18,9 @@ defineProps({
     title: {
         type: String,
         required: true
+    },
+    description: {
+        type: String
     },
     ctaTitle: {
         type: String,
