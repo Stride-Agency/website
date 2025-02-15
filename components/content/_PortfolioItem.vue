@@ -8,7 +8,7 @@
         </div>
         <!-- content column -->
         <div class="md:w-1/2">
-            <Card :title="clientName">
+            <Card :heading="clientName">
                 <template #main-badges>
                     <Badge :variant="mainBadgeVariant[category]">
                         {{ category }}
@@ -17,9 +17,9 @@
                 <p>
                     {{ description }}
                 </p>
-                <hr v-if="tags && tags.length" />
+                <hr v-if="transformedTags && transformedTags.length" />
                 <template #badges>
-                    <Badge v-for="tag in tags" :key="tag" variant="gray">
+                    <Badge v-for="tag in transformedTags" :key="tag" variant="gray">
                         {{ $t(`portfolio.tags.${tag}`) }}
                     </Badge>
                 </template>
@@ -31,8 +31,9 @@
 <script setup lang="ts">
 
 type Category = 'ecommerce' | 'saas'
+type Tag = 'facebook_api' | 'stripe_api' | 'supabase' | 'vercel' | 'nuxt' | 'typescript' | 'shopware' | 'shop_relaunch' | 'data_migration'
 
-defineProps({
+const props = defineProps({
     category: {
         type: String as PropType<Category>,
         required: true
@@ -46,7 +47,7 @@ defineProps({
         required: true
     },
     tags: {
-        type: Array as PropType<'facebook_api' | 'stripe_api' | 'supabase' | 'vercel' | 'nuxt' | 'typescript' | 'shopware' | 'shop_relaunch' | 'data_migration'[]>,
+        type: String
     }
 })
 
@@ -56,4 +57,11 @@ const mainBadgeVariant = {
 } as {
     [key in Category]: 'ecommerce' | 'software'
 }
+
+// Improve later https://discord.com/channels/1084786508424282154/1340447975964409899
+const transformedTags = computed(() => {
+    return props.tags
+        ? JSON.parse(props.tags)
+        : [] as Tag[]
+})
 </script>
