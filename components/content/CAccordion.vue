@@ -1,11 +1,13 @@
 <template>
 <div class="relative bg-light-4 bg-cover bg-no-repeat">
     <Container size="sm" class="py-32 z-30">
-        <Heading tag="h2" class="text-center text-balance mb-12 w-3/4 mx-auto">{{ title }}</Heading>
-        <p v-if="description">
-            {{ description }}
-        </p>
-        <Accordion type="single" class="w-full space-y-4" collapsible>
+        <Container size="xs" class="text-center space-y-10">
+            <Heading tag="h2" class="text-center">{{ title }}</Heading>
+            <p v-if="description" class="text-balance text-lg">
+                {{ description }}
+            </p>
+        </Container>
+        <Accordion type="single" class="w-full space-y-4 mt-16 pt-8" collapsible>
             <ContentSlot :use="$slots.default" />
         </Accordion>
         <AccordionCta :title="ctaTitle" :button-text="ctaButtonText" />

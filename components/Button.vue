@@ -7,7 +7,7 @@
       :type="componentType === 'button' ? type : ''"
       :disabled="isLoading || disabled"
       :aria-disabled="disabled"
-      :target="external ? _blank : ''"
+      :target="external ? '_blank' : ''"
     >
       <template v-if="variant === 'primary'">
         <span class="absolute inset-0 bg-gradient-to-r from-purple-800 to-purple-600 transition-opacity duration-300 ease-in-out opacity-100 hover:opacity-0"></span>

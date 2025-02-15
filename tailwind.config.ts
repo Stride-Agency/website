@@ -1,4 +1,5 @@
 import { darkMode } from "#tailwind-config"
+import { _maxWidth } from "#tailwind-config/theme"
 
 const animate = require("tailwindcss-animate")
 
@@ -16,6 +17,9 @@ module.exports = {
   prefix: "",
   theme: {
     extend: {
+      maxWidth: {
+        '7xl': '1184px'
+      },
     colors: {
       primary: 'blue',
       neutral: {
@@ -104,13 +108,6 @@ module.exports = {
       'light-4': "url('/images/light-4.png')",
       'grid-lines-1': "url('/images/grid-lines-1.png')",
       'stride-footer-font': "url('/images/stride-footer-font.svg')",
-    },
-    container: {
-      center: true,
-      padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
     },
     keyframes: {
       "accordion-down": {

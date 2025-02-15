@@ -1,8 +1,10 @@
 <template>
     <Dialog :open="isDialogOpen" @update:open="isDialogOpen = $event">
         <div class="text-center mt-16">
-            <Heading tag="h3" size="medium" class="text-center text-balance mb-12">{{ title }}</Heading>
-            <Button variant="glassmorphism" @click="isDialogOpen = true">{{ buttonText }}</Button>
+            <Container size="xs" class="space-y-10">
+                <Heading tag="h3" size="m" class="text-center text-balance">{{ title }}</Heading>
+                <Button variant="glassmorphism" @click="isDialogOpen = true">{{ buttonText }}</Button>
+            </Container>
             <LazyDialogContent>
                 <DialogHeader>
                     <DialogTitle>{{ $t('faq.modal.title') }}</DialogTitle>
