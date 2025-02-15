@@ -4,7 +4,6 @@
         <Header />
         <main class="pt-32">
             <NuxtPage />
-
         </main>
         <Footer />
         <Toaster />
