@@ -37,7 +37,11 @@
             "typescript": "TypeScript",
             "shopware": "Shopware",
             "shop_relaunch": "Shop Relaunch",
-            "data_migration": "Data Migration"
+            "data_migration": "Data Migration",
+            "plugin_development": "Plugin Development",
+            "email_marketing": "Email Marketing",
+            "theme_development": "Theme Development",
+            "shopify": "Shopify"
         },
         "category": {
             "saas": "SaaS",

@@ -8,7 +8,7 @@
         </CardHeading>
         <CardBody>
             <slot></slot>
-            <div v-if="$slots.badges && $slots.badges().length" class="space-x-2">
+            <div v-if="$slots.badges && $slots.badges().length" class="flex flex-wrap gap-2">
                 <slot name="badges"></slot>
             </div>
         </CardBody>
