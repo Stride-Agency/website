@@ -33,8 +33,8 @@
 </template>
 
 <script setup lang="ts">
+import type { Category } from '~/types/category'
 
-type Category = 'ecommerce' | 'saas'
 type Tag = 'facebook_api' | 'stripe_api' | 'supabase' | 'vercel' | 'nuxt' | 'typescript' | 'shopware' | 'shop_relaunch' | 'data_migration' | 'shopify' | 'plugin_development' | 'email_marketing' | 'theme_development'
 
 const props = defineProps({

@@ -1,6 +1,8 @@
 <template>
     <div class="px-4 sm:px-6 lg:px-8 mx-auto" :class="maxWidthClass">
-        <slot></slot>
+        <div class="-mx-4 sm:-mx-6 lg:-mx-8">
+            <slot></slot>
+        </div>
     </div>
 </template>
 

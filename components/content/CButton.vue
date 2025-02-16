@@ -1,6 +1,6 @@
 <template>
-    <Button v-bind="$attrs">
-        <ContentSlot :use="$slots.default" />
+    <Button v-bind="$props">
+        <ContentSlot :use="$slots.default" unwrap="p" />
     </Button>
 </template>
 
