@@ -1,23 +1,27 @@
 <template>
-    <div class="flex md:min-h-[556px]">
+    <div class="flex md:min-h-[556px] gap-x-6 even:flex-row-reverse">
         <!-- image column -->
-        <div class="md:w-1/2">
-            <div class="[&>img]:object-cover [&>img]:object-left [&>img]:h-full [&>img]:w-full">
+        <div class="md:w-1/2 flex items-stretch">
+            <div class="w-full flex items-stretch [&>img]:object-cover [&>img]:object-left [&>img]:h-full [&>img]:w-full [&>img]:absolute [&>img]:rounded-3xl relative ">
                 <ContentSlot :use="$slots.image" unwrap="p" />
             </div>
         </div>
         <!-- content column -->
-        <div class="md:w-1/2">
-            <Card :heading="clientName">
-                <template #main-badges>
+        <div class="md:w-1/2 flex items-stretch text-neutral-100">
+            <Card
+                :heading="clientName"
+                content-position="bottom"
+                class="w-full flex flex-col"
+            >
+                <template #mainBadges>
                     <Badge :variant="mainBadgeVariant[category]">
-                        {{ category }}
+                        {{ $t(`portfolio.category.${category}`) }}
                     </Badge>
                 </template>
-                <p>
+                <p class="mb-0">
                     {{ description }}
                 </p>
-                <hr v-if="transformedTags && transformedTags.length" />
+                <hr v-if="transformedTags && transformedTags.length" class="my-5 border-neutral-600" />
                 <template #badges>
                     <Badge v-for="tag in transformedTags" :key="tag" variant="gray">
                         {{ $t(`portfolio.tags.${tag}`) }}

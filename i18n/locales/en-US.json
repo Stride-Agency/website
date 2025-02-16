@@ -26,5 +26,22 @@
                 "success_message": "We'll get back to you as soon as possible."
             }
         }
+    },
+    "portfolio": {
+        "tags": {
+            "nuxt": "Nuxt",
+            "supabase": "Supabase",
+            "facebook_api": "Facebook API",
+            "stripe_api": "Stripe API",
+            "vercel": "Vercel",
+            "typescript": "TypeScript",
+            "shopware": "Shopware",
+            "shop_relaunch": "Shop Relaunch",
+            "data_migration": "Data Migration"
+        },
+        "category": {
+            "saas": "SaaS",
+            "ecommerce": "E-Commerce"
+        }
     }
 }

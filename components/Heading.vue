@@ -5,7 +5,7 @@
 </template>
 
 <script setup lang="ts">
-import type { HeadingTag } from '~/types/heading';
+import type { HeadingTag, HeadingSize } from '~/types/heading';
 
 const props = defineProps({
     tag: {
@@ -13,7 +13,7 @@ const props = defineProps({
         type: String as PropType<'div' | HeadingTag>,
     },
     size: {
-        type: String as PropType<'xxl' | 'xl' | 'l' | 'm' | 's' | 'xs'>,
+        type: String as PropType<HeadingSize>,
         default: 'xxl'
     }
 })

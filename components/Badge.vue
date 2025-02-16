@@ -1,5 +1,5 @@
 <template>
-    <span class="inline-flex items-center rounded-md bg-gray-400/10 px-2 py-1 font-medium ring-1 ring-inset" :class="variantClasses[variant]">
+    <span class="inline-flex items-center rounded-md bg-gray-400/10 px-2 py-1 ring-1 ring-inset text-md" :class="variantClasses[variant]">
         <slot></slot>
     </span>
 </template>

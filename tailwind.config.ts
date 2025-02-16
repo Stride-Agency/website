@@ -27,6 +27,7 @@ module.exports = {
         '200': '#C9C9DC',
         '300': '#A3A3B8',
         '400': '#090A23',
+        '600': '#242E47',
         '800': '#151A29',
         '900': '#0E121F',
         DEFAULT: '#050812'
@@ -114,6 +115,7 @@ module.exports = {
       primary: ['Aeonik'],
     },
     fontSize: {
+      'md': '1rem',
       '6xl': ['4rem', {
         lineHeight: '4rem',
         letterSpacing: '-0.04rem'
