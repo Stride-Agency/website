@@ -1,5 +1,5 @@
 <template>
-<div class="pt-8 sm:inline-block sm:w-full sm:px-4 last:col-auto last:md:col-span-full last:lg:col-auto
+<div class="pt-8 sm:inline-block sm:w-full last:col-auto last:md:col-span-full last:lg:col-auto
 ">
     <figure class="rounded-2xl bg-gray-50 p-8">
         <blockquote class="text-gray-900">
@@ -13,7 +13,7 @@
             </div>
             <div>
                 <div class="font-semibold text-gray-900">{{ `${authorName}, ${authorRole}` }}</div>
-                <div class="text-gray-600">{{ `${authorCompany}` }}</div>
+                <div class="text-gray-700">{{ `${authorCompany}` }}</div>
             </div>
         </figcaption>
     </figure>

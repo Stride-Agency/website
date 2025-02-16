@@ -1,5 +1,5 @@
 <template>
-    <Container size="lg">
+    <Container size="lg" class="py-28">
         <HeadingAndDescription v-if="title" :title="title" :description="description" />
         <div class="mt-10 flex flex-col sm:mt-16 min-h-[550px] gap-y-6">
             <ContentSlot :use="$slots.default" />
