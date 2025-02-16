@@ -1,7 +1,13 @@
 <template>
-    <Card :heading="title" heading-size="m" heading-tag="div" :class="cardClasses">
+    <Card
+        :heading="title"
+        heading-size="m"
+        heading-tag="div"
+        :class="cardClasses"
+        class="relative overflow-hidden"
+    >
         <slot></slot>
-        {{ number }}
+        <span class="absolute text-[175px] right-[0px] bottom-[-70px] text-white text-opacity-5 font-medium">{{ number }}</span>
     </Card>
 </template>
 
