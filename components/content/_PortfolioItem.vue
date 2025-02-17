@@ -62,7 +62,6 @@ const mainBadgeVariant = {
     [key in Category]: 'ecommerce' | 'software'
 }
 
-// Improve later https://discord.com/channels/1084786508424282154/1340447975964409899
 const transformedTags = computed(() => {
     return props.tags
         ? JSON.parse(props.tags)

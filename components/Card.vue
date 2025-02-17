@@ -6,8 +6,8 @@
     >
 
         <!-- Icon -->
-        <div v-if="icon" class="block">
-            <img :src="icon" alt="" class="w-20 h-20 mx-auto mt-[-3rem]">
+        <div v-if="icon" class="block mt-4">
+            <img :src="icon" alt="" class="w-20">
         </div>
 
         <!-- Card Heading -->
