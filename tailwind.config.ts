@@ -133,6 +133,7 @@ module.exports = {
       'light-4': "url('/images/light-4.png')",
       'grid-lines-1': "url('/images/grid-lines-1.png')",
       'stride-footer-font': "url('/images/stride-footer-font.svg')",
+      'cta-space': "url('/images/cta-space-background.png')"
     },
     keyframes: {
       "accordion-down": {
