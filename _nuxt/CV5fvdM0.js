@@ -1,0 +1,1 @@
+import{a,f as r,P as t,w as s,X as n,Y as p,R as i}from"./CL2tzEW3.js";import{r as m}from"./BZKW7nlm.js";import"./CxYJgpPD.js";const d=a({__name:"CContainer",props:{size:{type:String,default:"xl"}},setup(_){return(e,c)=>{const o=i;return r(),t(o,n(p(e.$props)),{default:s(()=>[m(e.$slots,"default")]),_:3},16)}}});export{d as default};
