@@ -5,7 +5,7 @@
 </template>
 
 <script setup lang="ts">
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import { TabsContent } from '@/components/ui/tabs'
 
 const props = defineProps({
     title: {
