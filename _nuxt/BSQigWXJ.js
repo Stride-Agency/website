@@ -1,0 +1,1 @@
+function t(e,a){const r=new Date(e);return new Intl.DateTimeFormat(a,{year:"numeric",month:"long",day:"numeric"}).format(r)}function n(e){return e.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/ß/g,"ss").replace(/[^a-z0-9 -]/g,"").replace(/\s+/g,"-").replace(/-+/g,"-").trim()}export{t as f,n as s};

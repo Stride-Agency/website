@@ -1,1 +1,0 @@
-import{r as o}from"./BZKW7nlm.js";import{a as r,f as a,g as t,n}from"./CL2tzEW3.js";import"./CxYJgpPD.js";const f=r({__name:"Row",props:{rowClasses:{type:String}},setup(e){return(s,l)=>(a(),t("div",{class:n(["flex",e.rowClasses])},[o(s.$slots,"default")],2))}});export{f as default};
