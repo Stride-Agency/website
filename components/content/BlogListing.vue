@@ -10,7 +10,7 @@
                         {{ description }}
                     </p>
                 </div>
-                <div class="space-y-6">
+                <ul class="space-y-6">
                     <ContentList
                         path="blog"
                         v-slot="{ list }"
@@ -18,7 +18,7 @@
                     >
                         <BlogListingItem v-for="post in list" :key="post.title" :post="post" />
                     </ContentList>
-                </div>
+                </ul>
             </div>
         </Container>
     </section>
