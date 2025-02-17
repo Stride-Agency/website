@@ -1,5 +1,7 @@
 <template>
-    <div size="lg" class="space-y-10 text-center">
+    <div
+        class="space-y-10 text-center"
+    >
         <Heading tag="h2" size="xxl" :class="headingClasses">
             {{ title }}
         </Heading>
@@ -27,6 +29,6 @@ defineProps({
     descriptionClasses: {
         type: String,
         default: ''
-    }
+    },
 })
 </script>

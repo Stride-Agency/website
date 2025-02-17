@@ -1,5 +1,5 @@
 <template>
-    <component :is="tag" class="font-medium text-white block" :class="sizeClasses">
+    <component :is="tag" class="font-medium block" :class="sizeClasses">
         <slot></slot>
     </component>
 </template>

@@ -8,5 +8,15 @@ export default function removeTrailingSlash(str: string): string {
 }
 
 export function cn(...inputs: ClassValue[]) {
-  return twMerge(clsx(inputs))
+    return twMerge(clsx(inputs))
+}
+
+export function formatDate(dateString: string, locale: 'de' | 'en'): string {
+    const date = new Date(dateString);
+
+    return new Intl.DateTimeFormat(locale, {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+    }).format(date);
 }
